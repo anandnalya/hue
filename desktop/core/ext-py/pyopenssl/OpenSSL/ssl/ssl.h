@@ -16,7 +16,7 @@
 #include <Python.h>
 #include <openssl/ssl.h>
 
-#if defined(OPENSSL_VERSION_NUMBER) && OPENSSL_VERSION_NUMBER > 0x009080efL
+#if defined(OPENSSL_VERSION_NUMBER) && OPENSSL_VERSION_NUMBER >= 0x009080afL
   #define SNI_EXTENSION_SUPPORT 1
 #endif
 
